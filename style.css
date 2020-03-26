@@ -6,13 +6,16 @@ body{
   background-color: #000000;
 }
 
+.JaredGoff:hover{
+    background-color: #DAA520;
+}
 
 .jaredpreach{
-  animation: blinkingText 1.5s;
-  animation-iteration-count: infinite;
   margin-top:10px;
   padding-left:20px;
-  font-size: 5vmin;
+  font-size: 16pt;
+  animation: blinkingText 1.5s;
+  animation-iteration-count: infinite;
   color: #1E90FF;
   position: absolute;
   font-family: 'Odibee Sans', sans-serif;
@@ -25,14 +28,20 @@ body{
 }
 
 .JaredGoff{
-  background-color: #0000FF;
-  grid-template-columns: repeat(7,5fr);
   transition: background-color 4s;
+  grid-template-columns: repeat(7,5fr);
   display: grid;
+  background-color: #0000FF;
+
 }
 
-.JaredGoff:hover{
-    background-color: #DAA520;
+
+.audible{
+  margin-bottom: 10px;
+  font-size:12pt;
+  color: #1E90FF;
+  font-family: 'Odibee Sans', sans-serif;
+
 }
 
 .item-3x4{
