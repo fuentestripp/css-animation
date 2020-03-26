@@ -6,36 +6,17 @@ body{
   background-color: #000000;
 }
 
-.gridContainer{
-  margin: 5vmin;
-  margin-top: 8vmin;
-  border: #ffffff;
-  border-width: 5px;
-  border-style: solid;
-}
-
-.JaredGoff{
-  background-color: #0000FF;
-  display: grid;
-  grid-template-columns: repeat(7,5fr);
-  transition: background-color 4s;
-}
-
-.JaredGoff:hover{
-    background-color: #db492c;
-}
 
 .jaredpreach{
-  margin-top:0px;
-  padding-left: 30px;
+  animation: blinkingText 1.5s;
+  animation-iteration-count: infinite;
+  margin-top:10px;
+  padding-left:20px;
   font-size: 5vmin;
-  color: #ffffff;
+  color: #1E90FF;
   position: absolute;
   font-family: 'Odibee Sans', sans-serif;
   overflow:hidden;
-  white-space: nowrap;
-  animation: blinkingText 1.5s;
-  animation-iteration-count: infinite;
 }
 
 .fullWidthImage{
@@ -43,18 +24,29 @@ body{
   width:100%;
 }
 
+.JaredGoff{
+  background-color: #0000FF;
+  grid-template-columns: repeat(7,5fr);
+  transition: background-color 4s;
+  display: grid;
+}
+
+.JaredGoff:hover{
+    background-color: #DAA520;
+}
+
 .item-3x4{
   grid-column-end: span 4;
   grid-row-end: span 3;
 }
 
-.item-5x8{
-  grid-column-end: span 8;
+.item-5x7{
+  grid-column-end: span 7;
   grid-row-end: span 5;
 }
 
 @keyframes  blinkingText {
-    0%   {color: #ff0072;}
-    50%  {color: #000;
+    0%   {color: ##F0FFFF;}
+    50%  {color: #000000;
             padding: 2vmin;}
-    100% {color: #ff0072;}
+    100% {color: #A52A2A;}
