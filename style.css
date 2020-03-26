@@ -5,21 +5,22 @@ body{
 }
 
 .JaredGoff:hover{
+    color: #000000;
     background-color: #DAA520;
 }
 
 .jaredpreach{
   margin-top:10px;
-  padding-left:300px;
+  padding-left:275px;
   font-size: 16pt;
   animation: blinkingText 10s;
   animation-iteration-count: infinite;
-  color: #1E90FF;
   position: absolute;
   font-family: 'Odibee Sans', sans-serif;
   overflow:hidden;
   animation-timing-function: ease;
 }
+
 
 .jaredpicture1{
   grid-column:4/1;
@@ -31,57 +32,68 @@ body{
   width:100%;
 }
 
-.jaredpicture3{
-  grid-column:4/1;
-  width:100%;
-}
 
-.jaredpicture4{
-  grid-column:4/1;
-  width:100%;
-}
-
-#jaredpicture1 img {
+#jaredpicture1 {
+  padding-left: 975px;
+height: 700px;
+  width:450px;
   margin:0 auto;
- width:450px;
- height:281px;
- transition: background-image 2s ease-in-out;
- background-image:url("jaredgoff1.jpg");
 }
 
-#jaredpicture1 img.top:hover {
-  background-image:url("jaredgoff2.jpg");
+
+
+#jaredpicture2 img {
+  padding-left: left:500px;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  animation-direction: reverse;
 
 }
 
+#jaredpicture2 img.top:hover {
+  opacity:0;
+  animation-direction: reverse;
+
+}
 .JaredGoff{
   grid-template-columns: repeat(7,5fr);
   display: grid;
-  background-color: #0000FF;
+  background-color: #000000;
+  transition: background-color .5s;
+    transition-property: background-color;
+    transition-duration: 1.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 
 }
 
 
 .audible{
-  margin-bottom: 10px;
-  font-size:12pt;
-  color: #1E90FF;
+  margin-bottom: px;
+  font-size:17pt;
+  color: #000000;
+  padding-left: 450px;
   font-family: 'Odibee Sans', sans-serif;
+  animation: blinkingText 1.5s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  overflow:hidden;
+  animation-timing-function: ease;
+  animation-direction: reverse;
+
 
 }
 
-.item-3x4{
-  grid-column-end: span 4;
-  grid-row-end: span 3;
-}
 
-.item-5x7{
-  grid-column-end: span 7;
+.item-5x10{
+  grid-column-end: span 10;
   grid-row-end: span 5;
 }
 
 @keyframes  blinkingText {
-    0%   {color: ##F0FFFF;}
+    0%   {color: ##000000;}
     50%  {color: #000000;
             padding: 2vmin;}
-    100% {color: #A52A2A;}
+    100% {color: #000000;}
